@@ -1,7 +1,10 @@
 # DesafioCloudops
 
+
+//Caminho utilizado onde estavam os arquivos do index e Dockerfile
 docker build -t desafio C:\Users\gnadt\Downloads\desafio
 
-docker run -it --rm -d -p 80:80 --name web webserver
+//Executa pagina index.html
+ docker run -p 80:80 desafio
 
-Foi utilizado porta 80 pois 8080 estava em uso
+Foi utilizado porta 80 pois 8080 estava em uso por outra aplicação sendo assim necessária seguinte link http://localhost:80/
